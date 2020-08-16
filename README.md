@@ -8,7 +8,8 @@ This is a simple implementation of the Burrows–Wheeler transform in python usi
 
 
 ## Implementation description
-*  transform method: For the transform the method first checks if the input is a string and contains zero or one '$''.
+###  transform method:
+For the transform the method first checks if the input is a string and contains zero or one '$''.
 In the case in which there is no '$' the methods adds it at the end of the string.
 A rotation matrix (it is actually implemented as an array of strings) is constructed concataning the string end of the string starting from the -i character with the start of the string till the -i character. In the end the inverse is returned.
 
