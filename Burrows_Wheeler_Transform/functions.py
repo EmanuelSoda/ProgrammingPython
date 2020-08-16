@@ -6,18 +6,18 @@ class invalid_string_error(Exception):
     pass
 
 
-
-
-''' Burrow - Wheeler Transform (BWT)
-    input: a string with or without a termination character not in the alphabet
-    output: the BWT of the input string '''
 def transform(string):
+    """
+    Burrow - Wheeler Transform (BWT)
+    input: a string with or without a termination character not in the alphabet
+    output: the BWT of the input string """
+
     # check if the input is a string
     if type(string) != str:
-        raise not_a_string_error(string)
+        raise not_a_string_error('The input ' + string + ' is not a string ')
     # the string must contains only one termination char
     elif string.count('$') > 1:
-        raise invalid_string_error(string)
+        raise invalid_string_error('The input ' + string + ' cointains more than one $' )
 
     # check if the last char contains the '$' otherwhise add it
     elif string[-1] != '$':
@@ -34,14 +34,16 @@ def transform(string):
 
 
 
-''' Inverse of the Burrow - Wheeler Transform (BWT)
-    input: the BWT of a string
-    output: the original string'''
 def inverse(bwt):
+    '''
+    Inverse of the Burrow - Wheeler Transform (BWT)
+    input: the BWT of a string
+    output: the original string '''
+
     if type(bwt) != str:
-        raise not_a_string_error(bwt)
+        raise not_a_string_error('The input ' + bwt + ' is not a string')
     elif bwt.count('$') != 1:
-        raise invalid_string_error(bwt)
+        raise invalid_string_error('The input ' + bwt + ' does not contain exactly one $ character')
 
     n = len(bwt)
     bwt_array = np.array(list(bwt))
@@ -58,4 +60,4 @@ def inverse(bwt):
         i = itemindex
 
     # return the string without the '$'
-    return finalString[1: ]
+    return finalString[1:]
