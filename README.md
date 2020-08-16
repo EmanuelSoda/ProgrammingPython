@@ -1,13 +1,13 @@
 # Python Scientific Programming project
 This is a simple implementation of the Burrows–Wheeler transform in python using numpy. 
 
-# Built With
+## Built With
 * Jupyter notebook
 * Python
 
 
 
-# Implementation description
+## Implementation description
 *  transform method: For the transform the method first checks if the input is a string and contains zero or one '$''.
 In the case in which there is no '$' the methods adds it at the end of the string.
 A rotation matrix (it is actually implemented as an array of strings) is constructed concataning the string end of the string starting from the -i character with the start of the string till the -i character. In the end the inverse is returned.
@@ -20,5 +20,5 @@ A while loop is performed untill the output has the same length of the input str
 
 
 
-# Authors
+## Authors
 * Emanuel Michele Soda
