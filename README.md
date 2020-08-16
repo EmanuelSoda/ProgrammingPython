@@ -5,6 +5,17 @@ This is a simple implementation of the Burrows–Wheeler transform in python usi
 * Jupyter notebook
 * Python
 
+## Usage
+
+```python
+from Burrows_Wheeler_Transform import transform
+from Burrows_Wheeler_Transform import inverse
+
+finalString = transform('Banana') # return  a$nnBaa
+originalString = inverse('a$nnBaa') # return Banana
+```
+
+
 
 
 ## Implementation description
