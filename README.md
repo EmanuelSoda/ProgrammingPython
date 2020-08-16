@@ -1,9 +1,25 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
 # Python Scientific Programming project
 This is a simple implementation of the Burrows–Wheeler transform in python using numpy. 
 
 ## Built With
 * Jupyter notebook
 * Python
+
+## Prerequisites 
+* numpy 
+```sh
+pip install numpy
+```
+or
+```sh
+conda install numpy
+```
 
 ## Usage
 
