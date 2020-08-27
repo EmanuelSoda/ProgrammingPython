@@ -14,6 +14,10 @@ or
 ```sh
 conda install numpy
 ```
+## Installation
+### Clone
+
+- Clone this repo to your local machine using "https://github.com/EmanuelSoda/ProgrammingPython.git"
 
 ## Usage
 
