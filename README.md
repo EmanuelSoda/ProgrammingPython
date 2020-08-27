@@ -17,7 +17,10 @@ conda install numpy
 ## Installation
 ### Clone
 
-- Clone this repo to your local machine using "https://github.com/EmanuelSoda/ProgrammingPython.git"
+- Clone this repo to your local machine using:
+```bash
+git clone https://github.com/EmanuelSoda/ProgrammingPython.git
+```
 
 ## Usage
 
