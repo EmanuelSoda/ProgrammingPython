@@ -21,6 +21,7 @@ conda install numpy
 ```bash
 git clone https://github.com/EmanuelSoda/ProgrammingPython.git
 ```
+[Notebbok](https://nbviewer.jupyter.org/github/EmanuelSoda/ProgrammingPython/blob/master/.ipynb_checkpoints/Test%20BWT-checkpoint.ipynb)
 
 ## Usage
 
